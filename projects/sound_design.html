@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Projects | Pedro Bosch</title>
+  <link rel="stylesheet" type="text/css" href="/style.css">
+  <link rel="icon" href="../misc/favicon.ico">
+  <style>
+    /* Add custom CSS styles here */
+    /* .middle-column {
+      display: flex;
+      justify-content: space-between;
+    } */
+
+    /* .content {
+      flex: 1;
+      margin-left: 20px; /* Add some space between videos and text} */ 
+
+    /* .content h2 {
+      margin-top: 0; Remove default margin for heading
+    } */
+
+    /* Style for images */
+    /* .content img {
+      max-width: 100%; /* Ensure images don't exceed their container width */
+      /* height: auto; Maintain aspect ratio */
+      /* display: block; Remove any default inline spacing */
+      /* margin: 0 auto 10px; Center images horizontally and add some space at the bottom */
+      /* width: 400px; Set the width of the images} */
+  </style>
+</head>
+<body>
+  <main>
+    <div class="header-background">
+      <h1><a class="highlight" href="/index.html">Pedro Bosch</a></h1>
+    </div>
+    <div class="left-column">
+      <ul>
+        <li><a href="../about.html">About</a></li>
+        <li><a href="#" class="toggle-projects">Projects</a></li>
+      </ul>
+      <!-- Projects List -->
+      <ul class="projects-list hidden">
+        <li><a href="sound_design.html">Sound Design</a></li>
+        <li><a href="releases.html">Releases</a></li>
+        <li><a href="performances.html">Performances</a></li>
+      </ul>
+    </div>
+
+    <section class="middle-column">
+      <div class="content">
+
+        <a href="sound_design/cityofnone.html">
+          <img src="/misc/photos/cityofnone.jpeg">
+        </a>
+        
+          <a href="sound_design/beyondthemarket.html">
+          <img src="/misc/photos/beyondthemarket.jpeg">
+        </a>
+
+        <a href="sound_design/LCFMA22.html">
+          <img src="/misc/photos/LCFMA22.jpeg">
+        </a>
+      </div>
+    </section>
+  </main>
+  <!-- Toggle List -->
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const toggleProjects = document.querySelector('.toggle-projects');
+      const projectsList = document.querySelector('.projects-list');
+
+      toggleProjects.addEventListener('click', function(e) {
+        e.preventDefault();
+        projectsList.classList.toggle('hidden');
+      });
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Projects | Pedro Bosch</title>
+  <link rel="stylesheet" type="text/css" href="/style.css">
+  <link rel="icon" href="../misc/favicon.ico">
+  <style>
+    .performances-section {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 70vh; /* Adjust the minimum height as needed */
+    }
+    .performances-table {
+      width: 50%;
+      border-collapse: collapse;
+    }
+    .performances-table th,
+    .performances-table td {
+      border: 0px solid #ddd;
+      padding: 8px;
+      text-align: left;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <div class="header-background">
+      <h1><a class="highlight" href="/index.html">Pedro Bosch</a></h1>
+    </div>
+    <div class="left-column">
+      <ul>
+        <li><a href="../about.html">About</a></li>
+        <li><a href="#" class="toggle-projects">Projects</a></li>
+      </ul>
+      <!-- Projects List -->
+      <ul class="projects-list hidden">
+        <li><a href="sound_design.html">Sound Design</a></li>
+        <li><a href="releases.html">Releases</a></li>
+        <li><a href="performances.html">Performances</a></li>
+      </ul>
+    </div>
+
+    <!-- Other content goes here -->
+
+  </main>
+
+  <!-- Performances Section -->
+  <section class="performances-section">
+    <table class="performances-table">
+      <tr>
+        <th>Performance</th>
+        <th>Date</th>
+        <th>Event Name</th>
+      </tr>
+      <tr>
+        <td>Corsica Studios</td>
+        <td>17/04/2024</td>
+        <td>LCC Sound Arts & Music Production Showcase</td>
+      </tr>
+      <tr>
+        <td>Avalon Cafe</td>
+        <td>Date 2</td>
+        <td>Description 2</td>
+      </tr>
+      <tr>
+        <td>Wharf Chambers</td>
+        <td>Date 3</td>
+        <td>Fake DAC</td>
+      </tr>
+      <!-- Add more rows for each performance -->
+    </table>
+  </section>
+
+  <!-- Toggle List -->
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const toggleProjects = document.querySelector('.toggle-projects');
+      const projectsList = document.querySelector('.projects-list');
+
+      toggleProjects.addEventListener('click', function(e) {
+        e.preventDefault();
+        projectsList.classList.toggle('hidden');
+      });
+    });
+  </script>
+</body>
+</html>

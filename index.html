@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>About | Pedro Bosch</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="icon" href="misc/favicon.ico">
+</head>
+<body>
+<!-- Lists -->
+<main> 
+  <div class="header-background">
+    <h1><a class="highlight" href="index.html">Pedro Bosch</a></h1>
+  </div>
+  <div class="left-column">
+    <ul>
+      <li><a href="about.html">About</a></li>
+      <li><a href="#" class="toggle-projects">Projects</a></li>
+    </ul>
+    <!-- Projects List -->
+    <ul class="projects-list hidden">
+      <li><a href="projects/sound_design.html">Sound Design</a></li>
+      <li><a href="projects/releases.html">Releases</a></li>
+      <li><a href="projects/performances.html">Performances</a></li>
+    </ul>
+  </div>
+</main>
+<!-- Toggle List-->
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const toggleProjects = document.querySelector('.toggle-projects');
+      const projectsList = document.querySelector('.projects-list');
+
+      toggleProjects.addEventListener('click', function(e) {
+        e.preventDefault();
+        projectsList.classList.toggle('hidden');
+      });
+    });
+  </script>
+</body>
+</html>

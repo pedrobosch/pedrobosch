@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Projects | Pedro Bosch</title>
+  <link rel="stylesheet" type="text/css" href="/style.css">
+  <link rel="icon" href="../misc/favicon.ico">
+
+</head>
+<body>
+  <main>
+    <div class="header-background">
+      <h1><a class="highlight" href="/index.html">Pedro Bosch</a></h1>
+    </div>
+    <div class="left-column">
+      <ul>
+        <li><a href="../about.html">About</a></li>
+        <li><a href="#" class="toggle-projects">Projects</a></li>
+      </ul>
+      <!-- Projects List -->
+      <ul class="projects-list hidden">
+        <li><a href="sound_design.html">Sound Design</a></li>
+        <li><a href="releases.html">Releases</a></li>
+        <li><a href="performances.html">Performances</a></li>
+      </ul>
+    </div>
+
+    <section class="middle-column">
+      <div class="content">
+
+        <a href="https://rocahaha.bandcamp.com/album/rocmas" target="_blank">
+          <img src="/misc/photos/roca.jpg">
+        </a>
+        
+          <a href="https://on.soundcloud.com/AC5FapGD2rdLGGhu6" target="_blank">
+          <img src="/misc/photos/wet.png">
+        </a>
+      </div>
+    </section>
+  </main>
+  <!-- Toggle List -->
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const toggleProjects = document.querySelector('.toggle-projects');
+      const projectsList = document.querySelector('.projects-list');
+
+      toggleProjects.addEventListener('click', function(e) {
+        e.preventDefault();
+        projectsList.classList.toggle('hidden');
+      });
+    });
+  </script>
+</body>
+</html>

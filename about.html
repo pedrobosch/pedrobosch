@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>About | Pedro Bosch</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="icon" href="misc/favicon.ico">
+</head>
+<body>
+<!-- Lists -->
+  <main> 
+    <div class="header-background">
+      <h1><a class="highlight" href="index.html">Pedro Bosch</a></h1>
+    </div>
+    <div class="left-column">
+      <ul>
+        <li><a href="about.html">About</a></li>
+        <li><a href="#" class="toggle-projects">Projects</a></li>
+      </ul>
+      <!-- Projects List -->
+      <ul class="projects-list hidden">
+        <li><a href="projects/sound_design.html">Sound Design</a></li>
+        <li><a href="projects/releases.html">Releases</a></li>
+        <li><a href="projects/performances.html">Performances</a></li>
+      </ul>
+    </div>
+
+    <div class="middle-column">
+      <div class="text-content">
+        <div class="about-section">
+          <p class="about-text">Pedro Bosch, a multi-hyphenate sound artist hailing from Mexico and currently based in London, delves into the realms of electro-acoustic music and sound for screen. His work embodies an exploration of abstraction and deconstruction within sound design and composition, utilizing modular synthesis and cybernetic processes. Motivated by the mystical allure of sound, he weaves intricate tapestries of auditory sensation, inviting audiences to immerse themselves in his captivating sonic landscapes.</p>
+        </div>
+        <div class="contact-section">
+          <ul class="contact-list">
+            <nav>
+              <li><a href="misc/content/Main _ CV (April-24).pdf" target="_blank">CV</a></li>
+              <li> <a href="mailto:pedrobm01@yahoo.com" target="_blank">PEDROBM01@YAHOO.COM</a></li>
+              <li> <a href="https://www.instagram.com/pedro.basch/" target="_blank">INSTAGRAM.COM/PEDRO.BASCH</a></li>
+              <li> <a href="https://soundcloud.com/basch_p/" target="_blank">SOUNDCLOUD.COM/BASCH_P</a></li>
+            </nav>
+          </ul>       
+        </div>
+      </div>
+    </div>
+  </main>
+<!-- Toggle List-->
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const toggleProjects = document.querySelector('.toggle-projects');
+      const projectsList = document.querySelector('.projects-list');
+
+      toggleProjects.addEventListener('click', function(e) {
+        e.preventDefault();
+        projectsList.classList.toggle('hidden');
+      });
+    });
+  </script>
+</body>
+</html>
+
