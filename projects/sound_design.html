@@ -4,31 +4,28 @@
   <title>Projects | Pedro Bosch</title>
   <link rel="stylesheet" type="text/css" href="/style.css">
   <link rel="icon" href="../misc/favicon.ico">
-  <style>
-    /* Add custom CSS styles here */
-    /* .middle-column {
-      display: flex;
-      justify-content: space-between;
-    } */
-
-    /* .content {
-      flex: 1;
-      margin-left: 20px; /* Add some space between videos and text} */ 
-
-    /* .content h2 {
-      margin-top: 0; Remove default margin for heading
-    } */
-
-    /* Style for images */
-    /* .content img {
-      max-width: 100%; /* Ensure images don't exceed their container width */
-      /* height: auto; Maintain aspect ratio */
-      /* display: block; Remove any default inline spacing */
-      /* margin: 0 auto 10px; Center images horizontally and add some space at the bottom */
-      /* width: 400px; Set the width of the images} */
-  </style>
 </head>
+
+<style>
+  .photo-column {
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    height: 80vh; /* Make the container cover the whole viewport height */
+  }
+  
+  /* Individual photo styling */
+  .photo-column .content img {
+    max-width: 100%; /* Make the images fill the container width */
+    height: 300px; /* Maintain aspect ratio */
+    margin-bottom: 20px; /* Add space between photos */
+    margin-left: 5px; /* Add space to the left of each image */
+    margin-right: 5px; /* Add space to the right of each image */
+  }
+</style>
+
 <body>
+
   <main>
     <div class="header-background">
       <h1><a class="highlight" href="/index.html">Pedro Bosch</a></h1>
@@ -45,25 +42,25 @@
         <li><a href="performances.html">Performances</a></li>
       </ul>
     </div>
-
-    <section class="middle-column">
-      <div class="content">
-
-        <a href="sound_design/cityofnone.html">
-          <img src="/misc/photos/cityofnone.jpeg">
-        </a>
-        
-          <a href="sound_design/beyondthemarket.html">
-          <img src="/misc/photos/beyondthemarket.jpeg">
-        </a>
-
-        <a href="sound_design/LCFMA22.html">
-          <img src="/misc/photos/LCFMA22.jpeg">
-        </a>
-      </div>
-    </section>
   </main>
-  <!-- Toggle List -->
+
+  <section class="photo-column">
+    <div class="content">
+
+      <a href="sound_design/cityofnone.html">
+        <img src="/misc/photos/cityofnone.jpeg">
+      </a>
+      
+        <a href="sound_design/beyondthemarket.html">
+        <img src="/misc/photos/beyondthemarket.jpeg">
+      </a>
+
+      <a href="sound_design/LCFMA22.html">
+        <img src="/misc/photos/LCFMA22.jpeg">
+      </a>
+    </div>
+  </section>
+
   <script>
     document.addEventListener('DOMContentLoaded', function() {
       const toggleProjects = document.querySelector('.toggle-projects');
@@ -75,5 +72,6 @@
       });
     });
   </script>
+
 </body>
 </html>

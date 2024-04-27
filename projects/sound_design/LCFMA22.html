@@ -1,36 +1,60 @@
+<!DOCTYPE html>
 <html>
+
 <head>
-  <title>About | Pedro Bosch</title>
+  <title>Projects | Pedro Bosch</title>
   <link rel="stylesheet" type="text/css" href="/style.css">
-  <link rel="icon" href="misc/favicon.ico">
+  <link rel="icon" href="../misc/favicon.ico">
 </head>
+
+<style>
+  .info-column {
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  height: 80vh; /* Make the container cover the whole viewport height */
+}
+
+.info-column .content {
+  text-align: center; /* Center the content horizontally */
+}
+
+.info-column .content img {
+  max-width: 100%; /* Make the image responsive */
+  max-height: 300px; /* Set maximum height for the image */
+  margin-bottom: 20px; /* Add space below the image */
+}
+</style>
+
 <body>
-<!-- Lists -->
-  <main> 
+
+  <main>
     <div class="header-background">
-      <h1><a class="highlight" href="index.html">Pedro Bosch</a></h1>
+      <h1><a class="highlight" href="/index.html">Pedro Bosch</a></h1>
     </div>
     <div class="left-column">
       <ul>
-        <li><a href="about.html">About</a></li>
+        <li><a href="/about.html">About</a></li>
         <li><a href="#" class="toggle-projects">Projects</a></li>
       </ul>
-      <!-- Projects List -->
       <ul class="projects-list hidden">
-        <li><a href="projects/sound_design.html">Sound Design</a></li>
-        <li><a href="projects/releases.html">Releases</a></li>
-        <li><a href="projects/performances.html">Performances</a></li>
+        <li><a href="/projects/sound_design.html">Sound Design</a></li>
+        <li><a href="/projects/releases.html">Releases</a></li>
+        <li><a href="/projects/performances.html">Performances</a></li>
       </ul>
     </div>
-
-    <div class="middle-column">
-      <iframe width="560" height="315" src="https://www.youtube.com/embed/fTVqvaPZpTs" frameborder="0" allowfullscreen></iframe>
-      <p>Collaborative project between LCC and LCF</p>
-    </div>    
-
   </main>
-<!-- Toggle List-->
-  <script>
+
+<section class="info-column">
+  <div class="content">
+    <a href="https://www.youtube.com/watch?v=fTVqvaPZpTs" target="_blank">
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/fTVqvaPZpTs" frameborder="0" allowfullscreen></iframe>
+    </a>
+    <p>Collaboration Between LCC and LCF</p>
+  </div>
+</section>
+
+<script>
     document.addEventListener('DOMContentLoaded', function() {
       const toggleProjects = document.querySelector('.toggle-projects');
       const projectsList = document.querySelector('.projects-list');
@@ -40,6 +64,8 @@
         projectsList.classList.toggle('hidden');
       });
     });
-  </script>
+</script>
+
 </body>
+
 </html>

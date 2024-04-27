@@ -5,36 +5,55 @@
   <link rel="stylesheet" type="text/css" href="/style.css">
   <link rel="icon" href="../misc/favicon.ico">
 </head>
+
+<style>
+  .info-column {
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  height: 80vh; /* Make the container cover the whole viewport height */
+}
+
+.info-column .content {
+  text-align: center; /* Center the content horizontally */
+}
+
+.info-column .content img {
+  max-width: 100%; /* Make the image responsive */
+  max-height: 300px; /* Set maximum height for the image */
+  margin-bottom: 20px; /* Add space below the image */
+}
+</style>
+
 <body>
+
   <main>
     <div class="header-background">
-      <h1><a class="highlight" href="/PBMWebsite/index.html">Pedro Bosch</a></h1>
+      <h1><a class="highlight" href="/index.html">Pedro Bosch</a></h1>
     </div>
     <div class="left-column">
       <ul>
-        <li><a href="../about.html">About</a></li>
+        <li><a href="/about.html">About</a></li>
         <li><a href="#" class="toggle-projects">Projects</a></li>
       </ul>
-      <!-- Projects List -->
       <ul class="projects-list hidden">
-        <li><a href="sound_design.html">Sound Design</a></li>
-        <li><a href="releases.html">Releases</a></li>
-        <li><a href="performances.html">Performances</a></li>
+        <li><a href="/projects/sound_design.html">Sound Design</a></li>
+        <li><a href="/projects/releases.html">Releases</a></li>
+        <li><a href="/projects/performances.html">Performances</a></li>
       </ul>
     </div>
-
-    <section class="middle-column">
-        <div class="content">
-        <a href="https://www.youtube.com/watch?v=gXxr7Xxys-o" target="_blank">
-            <img src="/misc/photos/cityofnone.jpeg" alt="City of None">
-          </a>
-          <p>City of None is a 17-minute-long short film, written and directed by Ciro de la Encarnación & Alejandro Fernández. All the foley, field recording, sound design, dialogue recording, and mixing were done by me and my collaborator Iñaki Ramírez</p>
-  
-        </div>
-    </section>
   </main>
-  <!-- Toggle List -->
-  <script>
+
+<section class="info-column">
+    <div class="content">
+    <a href="https://www.youtube.com/watch?v=gXxr7Xxys-o" target="_blank">
+        <img src="/misc/photos/cityofnone.jpeg" alt="City of None">
+      </a>
+      <p>City of None is a 17-minute-long short film, written and directed by Ciro de la Encarnación & Alejandro Fernández. All the foley, field recording, sound design, dialogue recording, and mixing were done by me and my collaborator Iñaki Ramírez</p>
+    </div>
+</section>
+
+<script>
     document.addEventListener('DOMContentLoaded', function() {
       const toggleProjects = document.querySelector('.toggle-projects');
       const projectsList = document.querySelector('.projects-list');
@@ -44,6 +63,8 @@
         projectsList.classList.toggle('hidden');
       });
     });
-  </script>
+</script>
+
 </body>
+
 </html>

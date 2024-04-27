@@ -1,12 +1,3 @@
-/* body {
-    margin: 0;
-    padding: 0;
-    height: 100%;
-    color: black; 
-    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", 
-    Helvetica, Arial, "Lucida Grande", sans-serif;
-  } */
-
 /* nav ul {
     list-style: none;
     margin: 0;
@@ -37,7 +28,6 @@ li a {
   font-size: 16px; /* Adjust font size as needed */
   /* Add any other styles as needed */
 }
-
 
 /* Change Colour to red when hovering over links */
 li a:hover {
@@ -203,44 +193,7 @@ main p {
     left: 50%;
     transform: translateX(-50%);
   }
-
-.image {
-    margin-top: 100px;
-    text-align: center;
-}
-
-/* CSS for arranging images in rows of three */
-.content {
-  display: flex; /* Use flexbox for layout */
-  flex-wrap: wrap; /* Allow items to wrap to the next row */
-  justify-content: space-between; /* Distribute items evenly along the main axis */
-}
-
-/* Style for individual images */
-.content img {
-  max-width: calc(33.33% - 20px); /* Set max width for each image to one-third of the container width minus the margin */
-  height: auto; /* Maintain aspect ratio */
-  margin-bottom: 20px; /* Add some space between images */
-}
-
-
-.image img {
-    width: 100%;
-    max-width: 800px;
-    height: auto;
-}
-
-/*Bio Image*/
-.image-container {
-    max-width: 40%; /* Set maximum width */
-    text-align: right; /* Align the content to the right */
-    margin-top: -70px; /* Adjust the margin to bring the image up */
-  }
   
-  .image-container img {
-    max-width: 80%; /* Ensure the image doesn't exceed its container */
-    height: auto; /* Maintain aspect ratio */
-  }
 
 .accordion {
     background-color: #eee;
