@@ -250,3 +250,17 @@ main p {
   display: none;
 }
 
+.bio-section {
+  position: absolute;
+  top: 200px; /* Adjust as needed to position the image below the header */
+  left: 280px; /* Adjust as needed to position the image to the right of the list */
+  right: 0;
+  bottom: 0;
+  overflow: hidden;
+}
+
+.bio-section img {
+  width: 80%;
+  height: 80%;
+  object-fit: cover;
+}

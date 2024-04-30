@@ -8,24 +8,29 @@
 <body>
 
   <main> 
-  <div class="header-background">
-    <h1><a class="highlight" href="index.html">Pedro Bosch</a></h1>
-  </div>
-  <div class="left-column">
-    <ul>
-      <li><a href="about.html">About</a></li>
-      <li><a href="#" class="toggle-projects">Projects</a></li>
-    </ul>
-    <!-- Projects List -->
-    <ul class="projects-list hidden">
-      <li><a href="projects/sound_design.html">Sound Design</a></li>
-      <li><a href="projects/releases.html">Releases</a></li>
-      <li><a href="projects/performances.html">Performances</a></li>
-    </ul>
-  </div>
-</main>
+    <div class="header-background">
+      <h1><a class="highlight" href="index.html">Pedro Bosch</a></h1>
+    </div>
+    <div class="left-column">
+      <ul>
+        <li><a href="about.html">About</a></li>
+        <li><a href="#" class="toggle-projects">Projects</a></li>
+      </ul>
 
-<script>
+      <ul class="projects-list hidden">
+        <li><a href="projects/sound_design.html">Sound Design</a></li>
+        <li><a href="projects/releases.html">Releases</a></li>
+        <li><a href="projects/performances.html">Performances</a></li>
+      </ul>
+    </div>
+
+    <!-- New Section for Image -->
+    <section class="bio-section">
+      <img src="misc/photos/corsica.png" alt="Corsica "LCC Sound Arts and Music Showcase">
+    </section>
+  </main>
+
+  <script>
     document.addEventListener('DOMContentLoaded', function() {
       const toggleProjects = document.querySelector('.toggle-projects');
       const projectsList = document.querySelector('.projects-list');
