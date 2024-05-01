@@ -76,32 +76,48 @@ main h1 {
     Helvetica, Arial, "Lucida Grande", sans-serif;}
 
 
-.middle-column {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start; /* Align items to the start */
-    align-items: flex-start; /* Align items to the start */
-    margin: 20px; /* Add some margin */
-    margin-top: 150px; /* Add some margin */
-    max-width: 1800px; /* Set maximum width for the content */
-    text-align: center; /* Center text horizontally */
-  }
+    .middle-column {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start; /* Align items to the start */
+      align-items: center; /* Align items horizontally to the center */
+      margin: 400px; /* Add some margin */
+      margin-top: 200px; /* Add some margin */
+      max-width: 1500px; /* Set maximum width for the content */
+      text-align: center; /* Center text horizontally */
+    }
+    
 
 .text-content {
     display: inline-block; /* Make the content inline block */
     text-align: center; /* Center text horizontally */
-    line-height: 3; /* Increase line height for more spacing between sentences */
+    line-height: 2.5; /* Increase line height for more spacing between sentences */
   }  
 
   .about-section {
-    word-spacing: 20px; /* Adjust spacing as needed */
-    margin-bottom: 40px; /* Adjust margin at the bottom of the About section */
+    word-spacing: 50px; /* Adjust spacing as needed */
+    margin-bottom: 120px; /* Adjust margin at the bottom of the About section */
   }
-
-  .contact-section {
-    margin-top: 40px; /* Adjust margin from the top of the contact section */
+  
+  .contact-links {
+    display: flex;
+    word-spacing: 90px; /* Adjust spacing between words */
+    justify-content: center; /* Align links horizontally */
   }
-
+  
+  .contact-links a {
+    text-decoration: none;
+    color: #C70039; /* Adjust as needed */
+    font-size: 20px; /* Adjust font size */
+    margin-left: -20px; /* Move text slightly to the left */
+  }
+  
+  .contact-links a:not(:last-child):after {
+    content: " |";
+    margin-right: 100px;
+  }
+  
+  
 
 .middle-column h2 {
     margin-top: 20px; /* Adjust as needed for vertical space */
