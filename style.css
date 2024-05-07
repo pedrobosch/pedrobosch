@@ -280,3 +280,19 @@ main p {
   height: 80%;
   object-fit: cover;
 }
+
+.photo-column {
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  height: 80vh; /* Make the container cover the whole viewport height */
+}
+
+/* Individual photo styling */
+.photo-column .content img {
+  max-width: 100%; /* Make the images fill the container width */
+  height: 300px; /* Maintain aspect ratio */
+  margin-bottom: 20px; /* Add space between photos */
+  margin-left: 5px; /* Add space to the left of each image */
+  margin-right: 5px; /* Add space to the right of each image */
+}
