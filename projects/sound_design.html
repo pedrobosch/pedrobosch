@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Projects | Bosch</title>
+  <link rel="stylesheet" type="text/css" href="/style.css">
+  <link rel="icon" href="/misc/content/favicon.ico">
+</head>
+
+<style>
+  .photo-column {
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    height: 80vh; /* Make the container cover the whole viewport height */
+  }
+  
+  /* Individual photo styling */
+  .photo-column .content img {
+    max-width: 100%; /* Make the images fill the container width */
+    height: 300px; /* Maintain aspect ratio */
+    margin-bottom: 20px; /* Add space between photos */
+    margin-left: 5px; /* Add space to the left of each image */
+    margin-right: 5px; /* Add space to the right of each image */
+  }
+</style>
+
+<body>
+
+  <main>
+    <div class="header-background">
+      <h1><a class="highlight" href="/index.html">Pedro Bosch</a></h1>
+    </div>
+    <div class="left-column">
+      <ul>
+        <li><a href="../about.html">About</a></li>
+        <li><a href="#" class="toggle-projects">Projects</a></li>
+      </ul>
+      <!-- Projects List -->
+      <ul class="projects-list hidden">
+        <li><a href="sound_design.html">Sound Design</a></li>
+        <li><a href="releases.html">Releases</a></li>
+        <li><a href="performances.html">Performances</a></li>
+      </ul>
+    </div>
+  </main>
+
+  <section class="photo-column">
+    <div class="content">
+
+      <a href="sound_design/cityofnone.html">
+        <img src="/misc/photos/cityofnone.jpeg">
+      </a>
+      
+        <a href="sound_design/beyondthemarket.html">
+        <img src="/misc/photos/beyondthemarket.jpeg">
+      </a>
+
+      <a href="sound_design/LCFMA22.html">
+        <img src="/misc/photos/LCFMA22.jpeg">
+      </a>
+    </div>
+  </section>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const toggleProjects = document.querySelector('.toggle-projects');
+      const projectsList = document.querySelector('.projects-list');
+
+      toggleProjects.addEventListener('click', function(e) {
+        e.preventDefault();
+        projectsList.classList.toggle('hidden');
+      });
+    });
+  </script>
+
+</body>
+</html>
